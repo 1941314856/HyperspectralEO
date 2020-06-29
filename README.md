@@ -14,31 +14,31 @@ This script allows the user to process and visualize hyperspectral data.
  `--dataset` : *string*  
  `--sets` : *string*   
  `--sensor` : *string*   
- name of the sensor to use. If the specified sensor is not the sensor which acquired the data, then the hyperspectral image will be simulated based on the sensor spectral response and on the GSD.  
+ Name of the sensor to use. If the specified sensor is not the sensor which acquired the data, then the hyperspectral image will be simulated based on the sensor spectral response and on the GSD.  
  `--classes` : *string*  
- classes id to select (ex: 1,2,3)   
+ Classes id to select (ex: 1,2,3).     
  `--smooth` : *float*  
- standard deviation of the gaussian filter to apply on the spectrums   
+ Standard deviation of the gaussian filter to apply on the spectrums.     
  `--remove` : *int*  
- number of bands to remove at the begining of the spectrums    
+ Number of bands to remove at the begining of the spectrums.      
  `--apply` : *string*  
- analysis to apply (pca or lda)  
+ Analysis to apply (pca or lda).    
  `--n_components` : *int*  
- number of components to keep  
+ Number of components to keep.    
  `--C1` : *int*  
- first component to display  
+ First component to display.    
  `--C2` : *int*  
- second component to display  
+ Second component to display.    
  `--show` : *string*  
- percentage of data to show  
+ Percentage of data to show.    
  `--dataviz` : *boolean*  
- store true to display the data spectrums  
+ Store true to display the data spectrums.    
  `--save` : *string*  
- folder path where to save the processed data  
+ Folder path where to save the processed data.    
  `--folder` : *string*  
- folder path where to save the figures  
+ Folder path where to save the figures.    
  `--display` : *string*  
- display either with 'matplotlib' or 'visdom'     
+ Display either with 'matplotlib' or 'visdom'.     
  
  ### plot.py
  
@@ -60,9 +60,9 @@ This script allows the user to process and visualize hyperspectral data.
   **Arguments:**
  
  `--dataset` : *string*  
- `--set` : *string* 
- `--file_path` : *string*  
- file path where to save the ground truth 
+ `--set` : *string*   
+ `--file_path` : *string*    
+ File path where to save the ground truth.
 
- **Returns:**
- A 2D numpy array ground truth
+ **Returns:**  
+ A 2D numpy array ground truth.
