@@ -6,8 +6,8 @@
 
 `python process_data.py --dataset PaviaU --sets train,val,test --sensor ROSIS --display visdom`
 
-**Arguments:**
- `--dataset` : *string*
+**Arguments:**  
+ `--dataset` : *string*  
  `--sets` : *string* 
 * `--sensor` : *string* 
 * `--classes` : *string*, classes id to select (ex: 1,2,3) 
