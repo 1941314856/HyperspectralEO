@@ -38,4 +38,31 @@ This script allows the user to process and visualize hyperspectral data.
  `--folder` : *string*  
  folder path where to save the figures  
  `--display` : *string*  
- display either with 'matplotlib' or 'visdom'  
+ display either with 'matplotlib' or 'visdom'     
+ 
+ ### plot.py
+ 
+ This scirpt allows the user to select pixels and plot their spectrums.
+ 
+ #### Usage
+ 
+ `python plot.py --dataset PaviaU --sets train,val`
+ 
+ **Arguments:**
+
+ `--dataset` : *string*  
+ `--sets` : *string* 
+ 
+ ### select_gt.py
+ 
+ This script allows the user to select a ground truth over some dataset.
+ 
+  **Arguments:**
+ 
+ `--dataset` : *string*  
+ `--set` : *string* 
+ `--file_path` : *string*  
+ file path where to save the ground truth 
+
+ **Returns:**
+ A 2D numpy array ground truth
