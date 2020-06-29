@@ -7,8 +7,8 @@
 `python process_data.py --dataset PaviaU --sets train,val,test --sensor ROSIS --display visdom`
 
 **Arguments:**
-* `--dataset` : *string*
-* `--sets` : *string* 
+ `--dataset` : *string*
+ `--sets` : *string* 
 * `--sensor` : *string* 
 * `--classes` : *string*, classes id to select (ex: 1,2,3) 
 * `--smooth` : *float*, standard deviation of the gaussian filter to apply on the spectrums 
