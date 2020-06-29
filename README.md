@@ -1,5 +1,38 @@
 # HyperspectralEO
 
+### main.py
+
+This script allows the user to train and evaluate machine learning models for hyperspectral images classification.
+
+#### Usage 
+
+`python main.py --dataset PaviaU --model nn --train --epoch 200 --classes 1,2 `  
+
+**Arguments:**  
+
+ `--dataset` : *string*  
+ `--model` : *string*  
+ `--runs` : *string*  
+ `--restore` : *string*  
+ `--train` : *string*  
+ `--test` : *string*  
+ `--map` : *string*  
+ `--res_folder` : *string*  
+ `--visdom` : *string*  
+ `--summary` : *string*  
+ `--one_vs_all` : *string*  
+ `--classes` : *string*  
+ `--epoch` : *string*  
+ `--patch_size` : *string*  
+ `--lr` : *string*  
+ `--weight_decay` : *string*  
+ `--batch_size` : *string*  
+  `--test_stride` : *string*  
+ `--flip_augmentation` : *string*  
+ `--radiation_augmentation` : *string*  
+ `--mixture_augmentation` : *string*  
+  
+
 
 ### process_data.py 
 
@@ -55,7 +88,11 @@ This script allows the user to process and visualize hyperspectral data.
  
  ### select_gt.py
  
- This script allows the user to select a ground truth over some dataset.
+ This script allows the user to select a ground truth over some dataset.  
+ 
+ #### Usage  
+ 
+ `python select_gt.py --dataset PaviaU --set train --file_path file_path`  
  
   **Arguments:**
  
