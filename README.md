@@ -1,8 +1,11 @@
 # HyperspectralEO
 
-## Usage
 
 ### process_data.py 
+
+.This script allows the user to process and visualize hyperspectral data. 
+
+#### Usage
 
 `python process_data.py --dataset PaviaU --sets train,val,test --sensor ROSIS --display visdom`
 
