@@ -3,7 +3,7 @@
 
 ### process_data.py 
 
-.This script allows the user to process and visualize hyperspectral data. 
+This script allows the user to process and visualize hyperspectral data. 
 
 #### Usage
 
@@ -14,6 +14,7 @@
  `--dataset` : *string*  
  `--sets` : *string*   
  `--sensor` : *string*   
+ name of the sensor to use. If the specified sensor is not the sensor which acquired the data, then the hyperspectral image will be simulated based on the sensor spectral response and on the GSD.  
  `--classes` : *string*  
  classes id to select (ex: 1,2,3)   
  `--smooth` : *float*  
