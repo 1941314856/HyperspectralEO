@@ -22,6 +22,24 @@ This script defines a `Dataset` class that represents a hyperspectral scene. A '
 * `label_values`: the names of the classes  
 * `sensor`: a `Sensor` object that represents a spectral sensor
   
+### datasets.py 
+
+Available datasets are configured in this script : 
+* Pavia Center  
+* Pavia University 
+* Salinas  
+* Indian Pines 
+* Botswana
+* Kennedy Space Center 
+* Fauga
+
+### sensors.py 
+
+Sensors are configured in this script. A `Sensor` object has various attributes such as:  
+* `wavelengths`: a *list* of every band wavelength  
+* `n_bands`: *int*, the number of usable bands 
+* `rgb_bands`: a *tuple* of the rgb bands for display
+
 ### main.py
 
 This script allows the user to train and evaluate machine learning models for hyperspectral images classification.
