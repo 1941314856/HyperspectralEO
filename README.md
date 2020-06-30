@@ -1,5 +1,7 @@
 # HyperspectralEO
 
+HyperspectralEO is a toolbox built on https://github.com/nshaud/DeepHyperX/ to process, analyze and classify hyperspectral / multispectral images. 
+
 ### models.py
 
 Basic neural networks and state-of-the-art deep networks are implemented in PyTorch in this script:
