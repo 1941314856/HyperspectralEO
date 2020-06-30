@@ -24,7 +24,7 @@ This script defines a `Dataset` class that represents a hyperspectral scene. A '
   
 ### datasets.py 
 
-Available datasets are configured in this script : 
+This script configures available datasets : 
 * Pavia Center  
 * Pavia University 
 * Salinas  
