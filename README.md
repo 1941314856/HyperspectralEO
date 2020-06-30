@@ -2,7 +2,7 @@
 
 ### models.py
 
-Classic neural networks and state-of-the-art deep networks are implemented in PyTorch here:   
+Basic neural networks and state-of-the-art deep networks are implemented in PyTorch in this script:
   * 1D CNN ([Deep Convolutional Neural Networks for Hyperspectral Image Classification, Hu et al., Journal of Sensors 2015](https://www.hindawi.com/journals/js/2015/258619/))
   * Semi-supervised 1D CNN ([Autoencodeurs pour la visualisation d'images hyperspectrales, Boulch et al., GRETSI 2017](https://delta-onera.github.io/publication/2017-GRETSI))
   * 2D CNN ([Hyperspectral CNN for Image Classification & Band Selection, with Application to Face Recognition, Sharma et al, technical report 2018](https://lirias.kuleuven.be/bitstream/123456789/566754/1/4166_final.pdf))
@@ -12,7 +12,15 @@ Classic neural networks and state-of-the-art deep networks are implemented in Py
   * 3D CNN ([Deep Feature Extraction and Classification of Hyperspectral Images Based on Convolutional Neural Networks, Chen et al., TGRS 2016](http://elib.dlr.de/106352/2/CNN.pdf))
   * 3D CNN ([Spectral–Spatial Classification of Hyperspectral Imagery with 3D Convolutional Neural Network, Li et al., Remote Sensing 2017](http://www.mdpi.com/2072-4292/9/1/67))
   * 3D CNN ([HSI-CNN: A Novel Convolution Neural Network for Hyperspectral Image, Luo et al, ICPR 2018](https://arxiv.org/abs/1802.10478))
-  * Multi-scale 3D CNN ([Multi-scale 3D Deep Convolutional Neural Network for Hyperspectral Image Classification, He et al, ICIP 2017](https://ieeexplore.ieee.org/document/8297014/))
+  * Multi-scale 3D CNN ([Multi-scale 3D Deep Convolutional Neural Network for Hyperspectral Image Classification, He et al, ICIP 2017](https://ieeexplore.ieee.org/document/8297014/))  
+  
+### data.py
+
+This script defines a `Dataset` class that represents a hyperspectral scene. A 'Dataset' has various attributes such as:  
+* `IMG`: a *dictionnary* containing the spectrums as 3D numpy arrays for the training, validation and test sets  
+* `GT`: a *dictionnary* containing the ground truth as 2D numpy arrays for the training, validation and test sets  
+* `label_values`: the names of the classes  
+* `sensor`: a `Sensor` object that represents a spectral sensor
   
 ### main.py
 
