@@ -163,6 +163,9 @@ This script allows the user to train and evaluate machine learning models for hy
  Learning rate for gradient descent.    
  `--weight_decay` : *float*  
  Coeffiicent for L1 regularization.  
+ `--class_balancing` : *boolean*  
+ Computes inverse median frequency weights if True for neural networks.  
+ Random selection of samples to obtain a balanced training set if True for SVM.    
  `--batch_size` : *int*  
   `--test_stride` : *int*  
   `--metrics` : *string*  
