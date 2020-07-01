@@ -133,32 +133,32 @@ This script allows the user to train and evaluate machine learning models for hy
 **Arguments:**  
 
  `--dataset` : *string*  
- `--model` : *string*
+ `--model` : *string*  
  `--cuda` : *int*  
- CUDA device (CPU or GPU).  
+ CUDA device (CPU or GPU).    
  `--runs` : *int*  
- Number of runs.
- `--restore` : *string*  
- File path to trained model.  
- `--train` : *boolean*  
- Set to True to train the model.
- `--test` : *boolean*  
- Set to True to evaluate the model.
- `--map` : *string*  
- Specified sets over which create map.  
- `--res_folder` : *string*  
- Folder path where to save the results.  
- `--visdom` : *boolean*
- True in order to display on visdom.  
- `--summary` : *boolean*  
- True in order to display the dataset summary (nb of classes, pixels...).  
- `--one_vs_all` : *int*
- If a class id is specified, the dataset will be turned in a One VS All configuration.
+ Number of runs.  
+ `--restore` : *string*    
+ File path to trained model.    
+ `--train` : *boolean*   
+ Set to True to train the model.  
+ `--test` : *boolean*   
+ Set to True to evaluate the model.  
+ `--map` : *string*    
+ Specified sets over which create map.    
+ `--res_folder` : *string*    
+ Folder path where to save the results.    
+ `--visdom` : *boolean*  
+ True in order to display on visdom.    
+ `--summary` : *boolean*   
+ True in order to display the dataset summary (nb of classes, pixels...).    
+ `--one_vs_all` : *int*  
+ If a class id is specified, the dataset will be turned in a One VS All configuration.  
  `--classes` : *string*  
  Classes to keep, for instance '1,2,3'.  
  `--epoch` : *int*    
  `--patch_size` : *int*  
- Neigbourhood size for spatial convolutions.  
+ Neigbourhood size for spatial convolutions.    
  `--lr` : *float*  
  Learning rate for gradient descent.    
  `--weight_decay` : *float*  
@@ -166,10 +166,10 @@ This script allows the user to train and evaluate machine learning models for hy
  `--batch_size` : *int*  
   `--test_stride` : *int*  
   `--metrics` : *string*  
-  Training and test metrics such as 'OA,kappa,f1_score'.  
+  Training and test metrics such as 'OA,kappa,f1_score'.    
  `--flip_augmentation` : *boolean*  
  Random flips if patch_size is superior to 1.  
  `--radiation_augmentation` : *boolean*  
- Random radiation noise to simulate illumination differences.
+ Random radiation noise to simulate illumination differences.  
  `--mixture_augmentation` : *boolean*  
  Random mixes between spectra.
