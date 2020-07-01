@@ -2,7 +2,7 @@
 
 HyperspectralEO is a toolbox built on https://github.com/nshaud/DeepHyperX/ to process, analyze and classify hyperspectral / multispectral images with a special focus on impervious surfaces classification.
 
-### models.py
+## models.py
 
 Basic neural networks and state-of-the-art deep networks are implemented in PyTorch in this script:
   * 1D CNN ([Deep Convolutional Neural Networks for Hyperspectral Image Classification, Hu et al., Journal of Sensors 2015](https://www.hindawi.com/journals/js/2015/258619/))
@@ -16,7 +16,7 @@ Basic neural networks and state-of-the-art deep networks are implemented in PyTo
   * 3D CNN ([HSI-CNN: A Novel Convolution Neural Network for Hyperspectral Image, Luo et al, ICPR 2018](https://arxiv.org/abs/1802.10478))
   * Multi-scale 3D CNN ([Multi-scale 3D Deep Convolutional Neural Network for Hyperspectral Image Classification, He et al, ICIP 2017](https://ieeexplore.ieee.org/document/8297014/))  
   
-### data.py
+## data.py
 
 This script defines a `Dataset` class that represents a hyperspectral scene. A `Dataset` has various attributes such as:  
 * `IMG`: a *dictionnary* containing the spectrums as 3D numpy arrays for the training, validation and test sets  
@@ -24,7 +24,7 @@ This script defines a `Dataset` class that represents a hyperspectral scene. A `
 * `label_values`: the names of the classes  
 * `sensor`: a `Sensor` object that represents a spectral sensor
   
-### datasets.py 
+## datasets.py 
 
 This script configures available datasets : 
 * Pavia Center  
@@ -35,14 +35,14 @@ This script configures available datasets :
 * Kennedy Space Center 
 * Fauga
 
-### sensors.py 
+## sensors.py 
 
 Sensors are configured in this script. A `Sensor` object has various attributes such as:  
 * `wavelengths`: a *list* of each band wavelength  
 * `n_bands`: *int*, the number of usable bands 
 * `rgb_bands`: a *tuple* of the rgb bands for display
 
-### create_sets.py
+## create_sets.py
 
 This script allows the user to create disjoint train, validation and test sets from a hyperspectral scene.
  
@@ -52,7 +52,7 @@ This script allows the user to create disjoint train, validation and test sets f
 
 60% of samples will constitute the train set, 20 % the validation set and 20 % the test set. When `--download` argument is used, the specified dataset is download from the source configured in datasets.py 
 
-### process_data.py 
+## process_data.py 
 
 This script allows the user to process and visualize hyperspectral data. 
 
@@ -91,7 +91,7 @@ This script allows the user to process and visualize hyperspectral data.
  `--display` : *string*  
  Display either with 'matplotlib' or 'visdom'.     
  
- ### plot.py
+ ## plot.py
  
  This scirpt allows the user to select pixels and plot their spectrums on visdom.
  
@@ -104,7 +104,7 @@ This script allows the user to process and visualize hyperspectral data.
  `--dataset` : *string*  
  `--sets` : *string* 
  
- ### select_gt.py
+ ## select_gt.py
  
  This script allows the user to select a ground truth over some dataset.  
  
@@ -122,7 +122,7 @@ This script allows the user to process and visualize hyperspectral data.
  **Returns:**  
  A 2D numpy array ground truth.
 
-### main.py
+## main.py
 
 This script allows the user to train and evaluate machine learning models for hyperspectral classification.
 
@@ -191,8 +191,8 @@ This script allows the user to train and evaluate machine learning models for hy
  
  `--hyp_dataset` : *string*  
  Hyperspectral dataset.  
- `--multi_dataset` : *string*
- Multispectral dataset.  
+ `--multi_dataset` : *string*  
+ Multispectral dataset.    
  `--clf_model` : *string*  
  Hyperspectral classifier.  
  
