@@ -42,39 +42,15 @@ Sensors are configured in this script. A `Sensor` object has various attributes 
 * `n_bands`: *int*, the number of usable bands 
 * `rgb_bands`: a *tuple* of the rgb bands for display
 
-### main.py
+### create_sets.py
 
-This script allows the user to train and evaluate machine learning models for hyperspectral images classification.
+This script allows the user to create disjoint train, validation and test sets from a hyperspectral scene.
+ 
+#### Usage
 
-#### Usage 
+`python create_sets.py --dataset PaviaU --training_sample 60 --val_sample 50 --sampling_mode disjoint`
 
-`python main.py --dataset PaviaU --model nn --train --epoch 200 --classes 1,2 `  
-
-**Arguments:**  
-
- `--dataset` : *string*  
- `--model` : *string*  
- `--runs` : *string*  
- `--restore` : *string*  
- `--train` : *string*  
- `--test` : *string*  
- `--map` : *string*  
- `--res_folder` : *string*  
- `--visdom` : *string*  
- `--summary` : *string*  
- `--one_vs_all` : *string*  
- `--classes` : *string*  
- `--epoch` : *string*  
- `--patch_size` : *string*  
- `--lr` : *string*  
- `--weight_decay` : *string*  
- `--batch_size` : *string*  
-  `--test_stride` : *string*  
- `--flip_augmentation` : *string*  
- `--radiation_augmentation` : *string*  
- `--mixture_augmentation` : *string*  
-  
-
+60% of samples will constitute the train set, 20 % the validation set and 20 % the test set.
 
 ### process_data.py 
 
@@ -145,3 +121,35 @@ This script allows the user to process and visualize hyperspectral data.
 
  **Returns:**  
  A 2D numpy array ground truth.
+
+### main.py
+
+This script allows the user to train and evaluate machine learning models for hyperspectral images classification.
+
+#### Usage 
+
+`python main.py --dataset PaviaU --model nn --train --epoch 200 --classes 1,2 `  
+
+**Arguments:**  
+
+ `--dataset` : *string*  
+ `--model` : *string*  
+ `--runs` : *string*  
+ `--restore` : *string*  
+ `--train` : *string*  
+ `--test` : *string*  
+ `--map` : *string*  
+ `--res_folder` : *string*  
+ `--visdom` : *string*  
+ `--summary` : *string*  
+ `--one_vs_all` : *string*  
+ `--classes` : *string*  
+ `--epoch` : *string*  
+ `--patch_size` : *string*  
+ `--lr` : *string*  
+ `--weight_decay` : *string*  
+ `--batch_size` : *string*  
+  `--test_stride` : *string*  
+ `--flip_augmentation` : *string*  
+ `--radiation_augmentation` : *string*  
+ `--mixture_augmentation` : *string*  
