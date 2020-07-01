@@ -56,7 +56,7 @@ This script allows the user to create disjoint train, validation and test sets f
 
 `python create_sets.py --dataset PaviaU --training_sample 60 --val_sample 50 --sampling_mode disjoint`
 
-60% of samples will constitute the train set, 20 % the validation set and 20 % the test set. When `--download` argument is used, the specified dataset is download from the source configured in datasets.py 
+In this example, 60% of samples will constitute the train set, 20 % the validation set and 20 % the test set. When `--download` argument is used, the specified dataset is downloaded from the source configured in datasets.py 
 
 ## process_data.py 
 
