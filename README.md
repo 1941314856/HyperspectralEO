@@ -202,5 +202,8 @@ This script allows the user to train and evaluate machine learning models for hy
  `--clf_model` : *string*  
  Hyperspectral classifier.  
  
- Other arguments are the same than main.py arguments.
-  
+ Other arguments are the same than main.py arguments.  
+ 
+ ## train_models.py  
+ 
+ This script defines the classes that are used for training and prediction, such as `Train` and `Watch`.
