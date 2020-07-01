@@ -18,7 +18,7 @@ Basic neural networks and state-of-the-art deep networks are implemented in PyTo
   
 ### data.py
 
-This script defines a `Dataset` class that represents a hyperspectral scene. A 'Dataset' has various attributes such as:  
+This script defines a `Dataset` class that represents a hyperspectral scene. A `Dataset` has various attributes such as:  
 * `IMG`: a *dictionnary* containing the spectrums as 3D numpy arrays for the training, validation and test sets  
 * `GT`: a *dictionnary* containing the ground truth as 2D numpy arrays for the training, validation and test sets  
 * `label_values`: the names of the classes  
