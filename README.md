@@ -38,7 +38,7 @@ This script configures available datasets :
 ### sensors.py 
 
 Sensors are configured in this script. A `Sensor` object has various attributes such as:  
-* `wavelengths`: a *list* of every band wavelength  
+* `wavelengths`: a *list* of each band wavelength  
 * `n_bands`: *int*, the number of usable bands 
 * `rgb_bands`: a *tuple* of the rgb bands for display
 
@@ -178,3 +178,23 @@ This script allows the user to train and evaluate machine learning models for hy
  Random radiation noise to simulate illumination differences.  
  `--mixture_augmentation` : *boolean*  
  Random mixes between spectra.
+ 
+ ## generate.py 
+ 
+ This script allows the user to generate hyperspectral spectrums.
+ 
+ #### Usage 
+ 
+ `python generate.py --hyp_dataset Fauga_FENIX --multi_dataset Fauga_WV3 --clf_model nn --clf_checkpoint nn_path`  
+ 
+ **Arguments:**  
+ 
+ `--hyp_dataset` : *string*  
+ Hyperspectral dataset.  
+ `--multi_dataset` : *string*
+ Multispectral dataset.  
+ `--clf_model` : *string*  
+ Hyperspectral classifier.  
+ 
+ Other arguments are the same than main.py arguments.
+  
