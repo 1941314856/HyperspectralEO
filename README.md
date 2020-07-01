@@ -1,6 +1,6 @@
 # HyperspectralEO
 
-HyperspectralEO is a toolbox built on https://github.com/nshaud/DeepHyperX/ to process, analyze and classify hyperspectral / multispectral images. 
+HyperspectralEO is a toolbox built on https://github.com/nshaud/DeepHyperX/ to process, analyze and classify hyperspectral / multispectral images with a special focus on impervious surfaces classification.
 
 ### models.py
 
