@@ -211,3 +211,7 @@ This script allows the user to train and evaluate machine learning models for hy
  ## train_models.py  
  
  This script defines the classes that are used for training and prediction, such as `Train` and `Watch`.
+ 
+ ## CNN1D_understanding.py
+ 
+ Example of script to display the weights of a 1D CNN, some input spectrums and their outputs after the convolutions.
