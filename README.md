@@ -156,6 +156,8 @@ This script allows the user to train and evaluate machine learning models for hy
  If a class id is specified, the dataset will be turned in a One VS All configuration.  
  `--classes` : *string*  
  Classes to keep, for instance '1,2,3'.  
+ `--transfer_learning` : *string*  
+ Path to pre-trained weights. When specified, the script calls a `transfer_learning` function that has to be designed by your own in `transfer_learning.py`.  
  `--epoch` : *int*    
  `--patch_size` : *int*  
  Neigbourhood size for spatial convolutions.    
