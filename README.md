@@ -14,7 +14,13 @@ Basic neural networks and state-of-the-art deep networks are implemented in PyTo
   * 3D CNN ([Deep Feature Extraction and Classification of Hyperspectral Images Based on Convolutional Neural Networks, Chen et al., TGRS 2016](http://elib.dlr.de/106352/2/CNN.pdf))
   * 3D CNN ([Spectral–Spatial Classification of Hyperspectral Imagery with 3D Convolutional Neural Network, Li et al., Remote Sensing 2017](http://www.mdpi.com/2072-4292/9/1/67))
   * 3D CNN ([HSI-CNN: A Novel Convolution Neural Network for Hyperspectral Image, Luo et al, ICPR 2018](https://arxiv.org/abs/1802.10478))
-  * Multi-scale 3D CNN ([Multi-scale 3D Deep Convolutional Neural Network for Hyperspectral Image Classification, He et al, ICIP 2017](https://ieeexplore.ieee.org/document/8297014/))  
+  * Multi-scale 3D CNN ([Multi-scale 3D Deep Convolutional Neural Network for Hyperspectral Image Classification, He et al, ICIP 2017](https://ieeexplore.ieee.org/document/8297014/))    
+  
+  Basic FNN or 1D CNN can be easily implemented with various architectures by initializing the `FNN` or `CNN1D` classes with such params:   
+  `  {1:{'h1': 8, 'h2':128, 'activation': F.relu, 'dropout': 0},
+      2:{'h1': 128, 'h2':256, 'activation': F.relu, 'dropout': 0},
+      3:{'h1': 256, 'h2':128, 'activation': F.relu, 'dropout': 0},
+      4:{'h1': 128, 'h2':14, 'activation': lambda x: x, 'dropout': 0}}`
   
 ## data.py
 
