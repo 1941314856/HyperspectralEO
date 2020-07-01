@@ -154,7 +154,7 @@ This script allows the user to train and evaluate machine learning models for hy
  Specified sets over which create map.   
  `--perviousness` : *string*  
  If 'dataset', then converts the ground truth in perviousness classes before training.    
- If 'classification', then converts the prediction in perviousness classes after the materials classification.  
+ If 'prediction', then converts the prediction in perviousness classes after the materials classification.  
  If 'transfer_learning', then the network will be trained to classify materials and perviousness simultaneously according to the `perviousness_classification` function defined in `transfer_learning.py`.    
  `--res_folder` : *string*    
  Folder path where to save the results.    
