@@ -50,7 +50,7 @@ This script allows the user to create disjoint train, validation and test sets f
 
 `python create_sets.py --dataset PaviaU --training_sample 60 --val_sample 50 --sampling_mode disjoint`
 
-60% of samples will constitute the train set, 20 % the validation set and 20 % the test set.
+60% of samples will constitute the train set, 20 % the validation set and 20 % the test set. When `--download` argument is used, the specified dataset is download from the source configured in datasets.py 
 
 ### process_data.py 
 
@@ -93,7 +93,7 @@ This script allows the user to process and visualize hyperspectral data.
  
  ### plot.py
  
- This scirpt allows the user to select pixels and plot their spectrums.
+ This scirpt allows the user to select pixels and plot their spectrums on visdom.
  
  #### Usage
  
@@ -124,7 +124,7 @@ This script allows the user to process and visualize hyperspectral data.
 
 ### main.py
 
-This script allows the user to train and evaluate machine learning models for hyperspectral images classification.
+This script allows the user to train and evaluate machine learning models for hyperspectral classification.
 
 #### Usage 
 
@@ -133,23 +133,43 @@ This script allows the user to train and evaluate machine learning models for hy
 **Arguments:**  
 
  `--dataset` : *string*  
- `--model` : *string*  
- `--runs` : *string*  
+ `--model` : *string*
+ `--cuda` : *int*  
+ CUDA device (CPU or GPU).  
+ `--runs` : *int*  
+ Number of runs.
  `--restore` : *string*  
- `--train` : *string*  
- `--test` : *string*  
+ File path to trained model.  
+ `--train` : *boolean*  
+ Set to True to train the model.
+ `--test` : *boolean*  
+ Set to True to evaluate the model.
  `--map` : *string*  
+ Specified sets over which create map.  
  `--res_folder` : *string*  
- `--visdom` : *string*  
- `--summary` : *string*  
- `--one_vs_all` : *string*  
+ Folder path where to save the results.  
+ `--visdom` : *boolean*
+ True in order to display on visdom.  
+ `--summary` : *boolean*  
+ True in order to display the dataset summary (nb of classes, pixels...).  
+ `--one_vs_all` : *int*
+ If a class id is specified, the dataset will be turned in a One VS All configuration.
  `--classes` : *string*  
- `--epoch` : *string*  
- `--patch_size` : *string*  
- `--lr` : *string*  
- `--weight_decay` : *string*  
- `--batch_size` : *string*  
-  `--test_stride` : *string*  
- `--flip_augmentation` : *string*  
- `--radiation_augmentation` : *string*  
- `--mixture_augmentation` : *string*  
+ Classes to keep, for instance '1,2,3'.  
+ `--epoch` : *int*    
+ `--patch_size` : *int*  
+ Neigbourhood size for spatial convolutions.  
+ `--lr` : *float*  
+ Learning rate for gradient descent.    
+ `--weight_decay` : *float*  
+ Coeffiicent for L1 regularization.  
+ `--batch_size` : *int*  
+  `--test_stride` : *int*  
+  `--metrics` : *string*  
+  Training and test metrics such as 'OA,kappa,f1_score'.  
+ `--flip_augmentation` : *boolean*  
+ Random flips if patch_size is superior to 1.  
+ `--radiation_augmentation` : *boolean*  
+ Random radiation noise to simulate illumination differences.
+ `--mixture_augmentation` : *boolean*  
+ Random mixes between spectra.
